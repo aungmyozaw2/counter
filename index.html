@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            display: block;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        clicker project
+    </div>
+    <h1 id="result">0</h1>
+    <div>
+        <button id="addclick">addclick</button>
+        <button id="resetclick">resetclick</button>
+    </div>
+    <script>
+        
+     (function (){
+        var addclick = document.querySelector('#addclick');
+      var resetclick = document.querySelector('#resetclick');
+      var result = document.querySelector('#result');
+
+      addclick.addEventListener('click',addclick1);
+
+      function addclick1() {
+          result.innerHTML ++ ;
+      }
+
+      resetclick.addEventListener('click',resetclick1);
+
+      function resetclick1() {
+          result.innerHTML = 0;
+      }
+     })();
+
+       
+
+    </script>
+</body>
+</html>
