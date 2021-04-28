@@ -1,0 +1,25 @@
+SELECT * FROM users WHERE name="Aung Myo Zaw",age=19
+
+SELECT * FROM users WHERE name="Aung Myo Zaw" => show name form value
+SELECT * FROM users WHERE name between 1 and 100 => show number between 1 to 100
+SELECT * FROM users WHERE name like "%hello%" => % is important show every include hello
+SELECT * FROM users order by name => list a to z
+SELECT * FROM users order by name DESC => list reverse
+
+for update
+
+update users set name='aunglay' where id=1 => prepare query
+update users set name='aunglay',location='shan' where id=2 => preare multiple query
+delete from users where id=2 => delete query
+
+select min(age) as min_age from users => show min age 
+select min(age) as min_age,name,age,id from users
+select sum(age) from users => will sum from age
+select count(age) from users => will show number list of age
+
+sql query for hacking
+
+SELECT * FROM users WHERE name="Aung Myo Zaw" and age=19 => search my account location
+
+
+/mnt/c/Users/Aung Myo Zaw
