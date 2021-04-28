@@ -22,4 +22,3 @@ sql query for hacking
 SELECT * FROM users WHERE name="Aung Myo Zaw" and age=19 => search my account location
 
 
-/mnt/c/Users/Aung Myo Zaw
