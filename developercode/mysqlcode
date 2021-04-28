@@ -1,5 +1,7 @@
-SELECT * FROM users WHERE name="Aung Myo Zaw",age=19
+select query
 
+SELECT * FROM users WHERE name="Aung Myo Zaw",age=19
+select * ,users.id as testing from users where name="Aung Myo Zaw"
 SELECT * FROM users WHERE name="Aung Myo Zaw" => show name form value
 SELECT * FROM users WHERE name between 1 and 100 => show number between 1 to 100
 SELECT * FROM users WHERE name like "%hello%" => % is important show every include hello
@@ -17,8 +19,58 @@ select min(age) as min_age,name,age,id from users
 select sum(age) from users => will sum from age
 select count(age) from users => will show number list of age
 
+join query
+
+4 type of join => inner join ,left join ,right join and full join
+
+inner join
+____________
+
+SELECT * FROM users 
+INNER JOIN
+user_details
+ON
+users.id=user_details.user_id => only show same id and have in same there will be show
+_____________________
+
+left join
+_____________
+
+SELECT * FROM users 
+left JOIN
+user_details
+ON
+users.id=user_details.user_id => show all calling id form  up
+_____________________
+
+right join
+_____________
+
+SELECT * FROM users 
+right JOIN
+user_details
+ON
+users.id=user_details.user_id => show all calling id form down
+_____________________
+
+full join
+
+________________
+SELECT * FROM users
+LEFT JOIN
+user_details
+ON
+users.id=user_details.user_id
+UNION
+SELECT * FROM users
+RIGHT JOIN
+user_details
+ON
+users.id=user_details.user_id
+_____________________________
+
+
 sql query for hacking
 
 SELECT * FROM users WHERE name="Aung Myo Zaw" and age=19 => search my account location
-
-
+SELECT * FROM users WHERE name like "%hello%" => % is important show every include hello
