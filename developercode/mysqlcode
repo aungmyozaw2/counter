@@ -19,6 +19,8 @@ select min(age) as min_age,name,age,id from users
 select sum(age) from users => will sum from age
 select count(age) from users => will show number list of age
 
+
+
 join query
 
 4 type of join => inner join ,left join ,right join and full join
@@ -68,6 +70,14 @@ user_details
 ON
 users.id=user_details.user_id
 _____________________________
+
+
+SELECT * ,
+(SELECT COUNT(id) as testing FROM articles WHERE articles.category_id=category.id) 
+as article_count
+FROM category
+
+select county(id) as testing  from articles where category_id=1
 
 
 sql query for hacking
