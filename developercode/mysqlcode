@@ -77,7 +77,8 @@ SELECT * ,
 as article_count
 FROM category
 
-select county(id) as testing  from articles where category_id=1
+
+
 
 
 sql query for hacking
