@@ -1,3 +1,6 @@
+insert into users (name,age,location) values ('aunglay',18,'mandalay')
+
+
 select query
 
 SELECT * FROM users WHERE name="Aung Myo Zaw",age=19
