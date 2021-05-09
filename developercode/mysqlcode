@@ -78,6 +78,9 @@ as article_count
 FROM category
 
 
+limit for sql
+
+select * from users limit 2=>start point , 2 => end point 
 
 
 
